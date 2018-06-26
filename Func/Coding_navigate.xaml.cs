@@ -15,20 +15,22 @@ using System.Windows.Shapes;
 namespace Java_Uphit
 {
     /// <summary>
-    /// Interaction logic for Java_navigate.xaml
+    /// Interaction logic for Coding_navigate.xaml
     /// </summary>
-    public partial class Java_navigate : Window
+    public partial class Coding_navigate : Window
     {
-        public Java_navigate()
+        public Coding_navigate()
         {
             InitializeComponent();
         }
 
-        private void Index_Click(object sender, RoutedEventArgs e)
+        //Opens the java section
+        private void Java_Click(object sender, RoutedEventArgs e)
         {
-            Code_Index sw = new Code_Index();
+            Java_navigate sw = new Java_navigate();
             sw.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             sw.Show();
+            this.Close();
         }
     }
 }

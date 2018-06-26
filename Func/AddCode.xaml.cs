@@ -24,6 +24,7 @@ namespace Java_Uphit
             InitializeComponent();
         }
 
+        // Related to the "AddCode section bottom right"
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 

@@ -25,18 +25,22 @@ namespace Java_Uphit
             InitializeComponent();
         }
 
+        // Opens the window related to "coding"
         private void Coding_Click(object sender, RoutedEventArgs e)
         {
             Coding_navigate sw = new Coding_navigate();
             sw.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             sw.Show();
+            this.Hide();
         }
 
+        //Opens the window related to Add code "bottom right of screen" /not in coding section
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             AddCode sw = new AddCode();
             sw.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             sw.Show();
+            this.Hide();
         }
     }
 }

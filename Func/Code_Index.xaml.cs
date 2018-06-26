@@ -24,17 +24,20 @@ namespace Java_Uphit
             
             InitializeComponent();
         }
-
+        
+        // simply a test implementation (attached to the "font 12" radiobutton
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
+        //only related to the first expander
         private void Expander_Expanded(object sender, RoutedEventArgs e)
         {
 
         }
 
+        //only related to the first expander
         private void Expander_Collapsed(object sender, RoutedEventArgs e)
         {
 

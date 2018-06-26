@@ -15,20 +15,22 @@ using System.Windows.Shapes;
 namespace Java_Uphit
 {
     /// <summary>
-    /// Interaction logic for Coding_navigate.xaml
+    /// Interaction logic for Java_navigate.xaml
     /// </summary>
-    public partial class Coding_navigate : Window
+    public partial class Java_navigate : Window
     {
-        public Coding_navigate()
+        public Java_navigate()
         {
             InitializeComponent();
         }
 
-        private void Java_Click(object sender, RoutedEventArgs e)
+        // Opens the index window and closes this one (only want to keep the mainwindow hidden, the rest should be closed as the system goes on.
+        private void Index_Click(object sender, RoutedEventArgs e)
         {
-            Java_navigate sw = new Java_navigate();
+            Code_Index sw = new Code_Index();
             sw.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             sw.Show();
+            this.Close();
         }
     }
 }
